@@ -93,7 +93,7 @@
   top: 1rem;
   right: 1rem;
   background-color: #12293d; /* Navy */
-  color: #e06622;            /* Orange */
+  color: white;
   font-weight: bold;
   padding: 1.2rem 1rem;
   border-radius: 50%;        /* Macht es rund */
@@ -109,11 +109,20 @@
   justify-content: center;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   z-index: 9999;
+  .sticker:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(224, 102, 34, 0.5); /* Orange Glow */
+  cursor: default;
+}.sticker-number {
+  font-size: 1.8rem;
+  line-height: 1;
+}
 } </style>
 </head>
   <body>
-    <div class="sticker">
-  313<br><span>Respect the Code</span>
+   <div class="sticker">
+  <span class="sticker-number">313</span>
+  <span>Respect the Code</span>
 </div>
   <header class="navbar">
     <div class="container">
